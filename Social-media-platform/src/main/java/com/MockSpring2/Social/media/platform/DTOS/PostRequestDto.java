@@ -4,15 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
-
-import java.sql.Time;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PostDto {
+public class PostRequestDto {
+
+    private int userId;
 
     private String content;
 

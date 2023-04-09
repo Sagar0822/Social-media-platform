@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDtos {
+public class UserRequestDtos {
     private String name;
 
     private int age;

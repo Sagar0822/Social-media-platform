@@ -17,6 +17,11 @@ import java.util.List;
 @Data
 @Builder
 public class Post {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int postId;
+
     private String content;
 
     @CreationTimestamp
@@ -28,6 +33,5 @@ public class Post {
     @JoinColumn
     User user;
 
-    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
-    List<Notification> notifications = new ArrayList<>();
+
 }

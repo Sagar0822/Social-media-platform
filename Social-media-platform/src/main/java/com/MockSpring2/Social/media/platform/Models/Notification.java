@@ -19,9 +19,7 @@ public class Notification {
     @CreationTimestamp
     private Time time;
 
-    @ManyToOne
-    @JoinColumn
-    Post post;
+    private Post post;
 
     @ManyToOne
     @JoinColumn
